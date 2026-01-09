@@ -2,7 +2,7 @@ pipeline {
   agent any
   environment {
     registry = "ex04"
-    dockerImage = ""
+    dockerImage = "php:8.3-apache"
   }
   stages {
     stage ('Docker Build'){
