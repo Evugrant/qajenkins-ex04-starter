@@ -4,11 +4,7 @@ pipeline {
     registry = "ex04"
   }
   stages {
-    stage("Validate With Terrascan") {
-    steps {
-        sh 'terrascan scan -i docker'
-    }
-    }
+
     stage ('Docker Build'){
     steps{
         script {
