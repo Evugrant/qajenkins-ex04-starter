@@ -1,6 +1,7 @@
 pipeline {
   agent any
   environment {
+    registry = "ex04"
   }
   stages {
     stage("Validate With Terrascan") {
