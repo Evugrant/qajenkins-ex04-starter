@@ -1,8 +1,6 @@
 pipeline {
   agent any
   environment {
-    registry = "ex04"
-    dockerImage = "php:8.3-apache"
   }
   stages {
     stage("Validate With Terrascan") {
