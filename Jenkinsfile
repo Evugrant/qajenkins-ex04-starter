@@ -5,6 +5,11 @@ pipeline {
     dockerImage = "php:8.3-apache"
   }
   stages {
+    stage("Validate With Terrascan") {
+    steps {
+        sh 'terrascan scan -i docker'
+    }
+    }
     stage ('Docker Build'){
     steps{
         script {
